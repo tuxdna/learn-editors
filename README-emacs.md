@@ -26,3 +26,10 @@ Renaming symbols ( functions, variables etc. )
 M-x eglot-rename  -> Provide new name, followed by RET
 ```
 
+
+https://github.com/renzmann/treesit-auto
+
+https://github.com/jamescherti/compile-angel.el
+
+https://github.com/jamescherti/elispcomp
+

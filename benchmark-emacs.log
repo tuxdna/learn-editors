@@ -1,0 +1,33 @@
+Start
+options=--debug-init 
+1.88user 0.30system 0:02.50elapsed 87%CPU (0avgtext+0avgdata 139376maxresident)k
+0inputs+0outputs (0major+18984minor)pagefaults 0swaps
+
+options=--debug-init -nw
+1.55user 0.27system 0:01.84elapsed 98%CPU (0avgtext+0avgdata 109732maxresident)k
+0inputs+0outputs (0major+16072minor)pagefaults 0swaps
+
+options=--debug-init -q
+0.37user 0.09system 0:00.54elapsed 86%CPU (0avgtext+0avgdata 88692maxresident)k
+0inputs+0outputs (0major+9030minor)pagefaults 0swaps
+
+options=--debug-init --no-site-file
+1.75user 0.31system 0:02.21elapsed 93%CPU (0avgtext+0avgdata 137944maxresident)k
+0inputs+0outputs (0major+18583minor)pagefaults 0swaps
+
+options=--debug-init --no-site-lisp
+1.06user 0.15system 0:01.90elapsed 63%CPU (0avgtext+0avgdata 117160maxresident)k
+0inputs+0outputs (0major+15098minor)pagefaults 0swaps
+
+options=--debug-init --no-splash
+1.85user 0.34system 0:02.51elapsed 87%CPU (0avgtext+0avgdata 139836maxresident)k
+0inputs+0outputs (0major+18999minor)pagefaults 0swaps
+
+options=--debug-init --no-x-resources
+1.83user 0.30system 0:02.27elapsed 93%CPU (0avgtext+0avgdata 139364maxresident)k
+0inputs+0outputs (0major+18990minor)pagefaults 0swaps
+
+options=--debug-init -nw -Q
+0.09user 0.03system 0:00.12elapsed 100%CPU (0avgtext+0avgdata 60904maxresident)k
+0inputs+0outputs (0major+6446minor)pagefaults 0swaps
+
