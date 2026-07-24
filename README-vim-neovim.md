@@ -25,6 +25,10 @@ set noruler
 set ruler!`
 
 ctrl+w w
+
+
+Ctrl+]  => Jumps to the definition of current keyword
+Ctrl+o  => Jumps back to previous location
 ```
 
 ## Operations
