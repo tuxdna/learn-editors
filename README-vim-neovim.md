@@ -2,11 +2,50 @@
 
 ## Navigations
 
+Motions
+
 ```
-h,j,k,l
+h
+j
+k
+l
 ctrl+f
 ctrl+b
+w, W => word forward
+b, B => word bacward
+gg
+G
+ctrl+g
+g ctrl+g
+
+:$
+:<linenum>
+set ruler
+set noruler
+set ruler!`
+
+ctrl+w w
 ```
+
+## Operations
+
+Deleting
+```
+x
+X
+operation{motion}
+
+dh
+dl
+dj
+dk
+d0
+d$
+
+3dd
+5dw
+```
+
 
 
 Browse Directory:
