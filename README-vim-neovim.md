@@ -50,8 +50,41 @@ d$
 5dw
 ```
 
+# Terminal inside vim
+
+```
+:terminal
+```
+
+```
+Ctrl+\ n ( ctrl + followed by n )
+```
+
+# Registers ( for delte, yank etc )
+
+```
+d, c, s, x and y operations
+"" default register
+"0 through "9 are 10 numbered registers
+"a through "z are 26 named registers
 
 
+"0 holds last yanked text
+"1 holds last deleted text
+Numbered registers shift with each d or c
+
+Type :reg to list all registers
+
+Following will list valies from registers 0, 1, 9 and z
+
+:reg 1 z 9 0
+
+Undo is u
+Redo is Ctrl+R
+
+```
+
+# Other features
 Browse Directory:
 
 ```
