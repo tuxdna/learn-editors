@@ -2,10 +2,11 @@
 
 ## Navigations
 
+```
 h,j,k,l
 ctrl+f
 ctrl+b
-
+```
 
 
 Browse Directory:
