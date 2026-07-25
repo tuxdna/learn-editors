@@ -84,6 +84,50 @@ Redo is Ctrl+R
 
 ```
 
+# Substituting text
+
+```
+~     => toggle case of current character
+g~w   => change case until word ends from current position
+guu   => make line lower case
+gUU   => make line lower case
+J     => combine current line with the next line
+gJ    => combine current and next line with no spaces inserted in between
+
+```
+
+# Searching
+
+```
+f<char>   e.g. fa will search for a on the current line
+fa;   will search for a next, then repeat the search by semicolon ; on the current line
+fa,   will search for a previous, then repeat the search by semicolon , on the current line
+
+t<char>   place cursor before <char> on current line
+ta;   place cursor before 'a' forward and then repeat 
+ta,   place cursor before 'a' backward and then repeat
+
+T<char>   place cursor after <char> on current line
+Ta;   place cursor after 'a' forward and then repeat 
+Ta,   place cursor after 'a' backward and then repeat
+
+
+/<text>   search for <text> forward
+/and      search for 'and' forward, press 'n' to searcn forward, and 'N' to search backward
+
+?<text>   search for <text> backward
+?and      search for 'and' backward, press 'n' to searcn backward, and 'N' to search forward
+
+*         search for current word forward
+#         search for current word forward
+n or N    repeat search in forward or bacward direction respectively
+
+:set incsearch
+:set hlsearch
+
+```
+
+
 # Other features
 Browse Directory:
 
