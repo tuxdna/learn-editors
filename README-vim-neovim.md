@@ -127,6 +127,36 @@ n or N    repeat search in forward or bacward direction respectively
 
 ```
 
+# Search and Replace
+
+```
+:<range>s/<search>/<replace>/<flags>  
+
+<range> could be line numbers separaed by comma
+   current line is the default range
+   or . for current line
+   or $ for last line
+   or % for entire file
+   or pattern match e.g. /Global/,/Local/  -> here Replace between Global and Local
+<flags> could be one of: 
+   g means all occurences in the range
+
+:/Global/,/Local/s/net/org/g
+
+  => Search Globa and Local, then substitute net with org globaly in this range
+
+:s#/var/spool#/usr/local#g 
+
+  => Use # insted of / for search separator and then replace /var/spool with /usr/local on current line
+
+:set number    # set state
+:set nonumber  # unset state
+:set nu!       # toggle state
+:set number?   # check state
+
+gUw and gUW => uppercase current word
+80i*ESC  => write 80 asterisks
+```
 
 # Other features
 Browse Directory:
