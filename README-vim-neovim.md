@@ -158,6 +158,54 @@ gUw and gUW => uppercase current word
 80i*ESC  => write 80 asterisks
 ```
 
+# Text objects
+
+```
+{operator}{a/i}{object}
+
+Operator is one of: c y d
+Object is one of: w " ' < > [ ] { } ( ) ` B 
+
+Eg: 
+    daw    => delete around word
+    diw    => delete inner word
+    caw    => change around word
+    ciw    => change inner word
+
+    das    => delete around sentence
+    dis    => delete inner sentence
+    cas    => change around sentence
+    cis    => change inner sentence
+
+    dap    => delete around paragraph
+    dip    => delete inner paragraph
+    cap    => change around paragraph
+    cip    => change inner paragraph
+
+    da[    => delete around block by square brackets
+    di[    => delete inner block by square brackets
+    ca[    => change around block by square brackets
+    ci[    => change inner block by square brackets
+
+    da(    => delete around block by parentheses
+    di(    => delete inner block by parentheses
+    ca(    => change around block by parentheses
+    ci(    => change inner block by parentheses
+
+Similarly
+
+    yi<   => yank inner inside block surrounded by angle brackets 
+
+Text: <h1>This is some headline</h1>
+
+    cit   => Will change the text enclosed inside the tags by h1
+
+```
+
+# Macros
+
+
+
 # Other features
 Browse Directory:
 
