@@ -314,6 +314,32 @@ color=slate
 
 ```
 
+# Buffers and Widows
+
+```
+:bprev
+:bnext
+:b1
+:b2
+:buffers
+:help :buffers
+:bfirst
+:ls
+Ctrl+^   => Navigate to alternate buffer marked by # sign
+:b#      => same as above
+
+
+:e / :edit
+:ls / :buffers
+:b  / :buffer
+:bn / :bnext
+:bp / :bprev
+:bd / :bdelete
+:bdo
+:set hidden
+:qall!
+```
+
 # Other features
 Browse Directory:
 
