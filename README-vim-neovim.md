@@ -204,6 +204,23 @@ Text: <h1>This is some headline</h1>
 
 # Macros
 
+```
+qa  => Start recording macro for name a
+0 => Normalize the position
+some keystrojes =>
+j => For next line
+q => End macro recording
+
+@a  => Replay macro name a
+@@  => Replay recent macro
+.   => Repeat recent keystrokes
+
+
+Example
+
+s/<\/a><a/<\/a>\r<a/g
+
+```
 
 
 # Other features
