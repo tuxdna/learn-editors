@@ -205,15 +205,16 @@ Text: <h1>This is some headline</h1>
 # Macros
 
 ```
-qa  => Start recording macro for name a
+qa  => Start recording macro in register a
 0 => Normalize the position
 some keystrojes =>
 j => For next line
 q => End macro recording
 
-@a  => Replay macro name a
+@a  => Replay macro stored in register a
 @@  => Replay recent macro
-.   => Repeat recent keystrokes
+:.,$normal @@  => Replay recent macro from current line till end of file
+.   => Repeat recent keystrokes, is not same is replay macro, Use carefully
 
 
 Example
@@ -222,6 +223,45 @@ s/<\/a><a/<\/a>\r<a/g
 
 ```
 
+# Visual mode
+
+```
+v  => character level visual mode
+V  => line level visual mode
+Ctrl+v  => block level visual mode
+
+o   => After making selection, move cursor position to other end of selection
+O   => In block visual mode, move to other end of current line selection in a block
+gv  => Show most recent selection
+
+Some commands we can use:
+~ - Switch case
+c - Change
+d - Delete
+y - Yank
+r - Replace
+x - Delete
+I - Insert
+A - Append
+J - Join
+u - Make lowercase
+U - Make uppercase
+> - Shift right
+< - Shift left
+
+Ex:
+
+>i}   => Shift inside text of block marked by }. We can use similar combinations with other commands
+```
+
+```
+set tabstops
+set shiftwidth
+set expandtabs
+set list
+
+
+```
 
 # Other features
 Browse Directory:
