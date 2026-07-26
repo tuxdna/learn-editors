@@ -316,6 +316,7 @@ color=slate
 
 # Buffers and Widows
 
+## Buffers
 ```
 :bprev
 :bnext
@@ -339,6 +340,50 @@ Ctrl+^   => Navigate to alternate buffer marked by # sign
 :set hidden
 :qall!
 ```
+
+
+## Windows
+
+```
+Ctrl+w s => split horizontally
+Ctrl+w v => split vertically
+Ctrl+w q => close current window 
+
+:only    => close others except current
+Ctrl+w o => close others except current
+
+Ctrl+w w => move to other window
+
+Ctrl+w h => move to window left
+Ctrl+w j => move to window up
+Ctrl+w k => move to window down
+Ctrl+w l => move to window right
+
+Ctrl+w +   => increase height of current window
+Ctrl+w -   => decrease height of current window
+Ctrl+w >   => increase width of current window
+Ctrl+w <   => decrease width of current window
+Ctrl+w _   => maximise height of current window
+Ctrl+w |   => maximise width of current window
+Ctrl+w =   => make size equal of all windows
+Ctrl+w R   => rotate windows
+Ctrl+w r   => rotate windows other direction
+
+Ctrl+w H => move window left
+Ctrl+w J => move window up
+Ctrl+w K => move window down
+Ctrl+w L => move window right
+
+:vs
+:sp
+:vs file.txt   => open fine in new vsplit
+
+:only
+:ball
+:windo
+
+```
+
 
 # Other features
 Browse Directory:
