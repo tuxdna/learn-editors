@@ -263,6 +263,57 @@ set list
 
 ```
 
+```
+:'<,'>center80
+:'<,'>le5
+:'<,'>right
+:'<,'>center40
+
+```
+
+# Vim RC file
+
+```
+see ":help option-list" and ":options".
+```
+
+```
+set rtp^="/Users/saleem_ansari/.opam/default/share/ocp-indent/vim"
+syntax on
+filetype plugin indent on
+let g:markdown_fenced_languages = ['html', 'python', 'javascript', 'bash', 'sh']
+" set ruler
+set ruler
+" set history to 1000
+set history=1000
+set showcmd
+set wildmenu
+set scrolloff=5
+set hlsearch
+set incsearch
+" set ignorecase
+" set smartcase
+set number
+set backup
+" line break behaviour
+set lbr
+" auto indent
+set ai
+" smart indent
+set si
+set bg=dark
+
+color=slate
+
+"map KEY KEYSTROKES
+
+"map F2 iJohn Smito<CR>123 Main Rd.<CR>Sometime, DD<CR><ESC>
+
+" let mapleader=","
+"map <leader>w :w!<CR>
+
+```
+
 # Other features
 Browse Directory:
 
