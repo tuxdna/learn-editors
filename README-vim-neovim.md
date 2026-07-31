@@ -24,6 +24,10 @@ set ruler
 set noruler
 set ruler!`
 
+Place cursor on any brackets and press %. this will move to matching bracket, example below:
+
+Text: <  {   (    )  [    ]   } >
+
 ctrl+w w
 
 
