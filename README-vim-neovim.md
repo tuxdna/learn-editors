@@ -316,6 +316,18 @@ color=slate
 
 # Buffers and Widows
 
+## Multiple files
+
+```
+vim *.md
+
+:next
+:first
+:last
+:previous
+:args     => List all files provide as cli args to vim 
+```
+
 ## Buffers
 ```
 :bprev
@@ -328,6 +340,17 @@ color=slate
 :ls
 Ctrl+^   => Navigate to alternate buffer marked by # sign
 :b#      => same as above
+
+# This will update all open buffers by running substitue command as below
+# update will save the file if it was modified
+
+:bufdo  %s/log_level:.*/log_level: debug/g | update
+
+# This will add `# End of config` line to all open buffers
+:bufdo normal Go# End of config
+
+# This will add `# End of config` line to all open windows
+:windo normal Go# End of config
 
 
 :e / :edit
