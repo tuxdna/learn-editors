@@ -19,3 +19,5 @@ df -h
 free -h
 ps aux --sort=-%cpu | head -n 6
 
+cat hello.txt || exit 1
+

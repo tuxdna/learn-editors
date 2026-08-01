@@ -1,5 +1,15 @@
 #!/usr/bin/env bash
 
+set -x 
+
+
+cleanup() {
+	echo "Cleanup up temporary files..."
+	echo "Dry run rm tmp_file.txt"
+}
+
+trap cleanup EXIT
+
 function greet {
 	local name="Bob"
 	echo "Hello $name!"
@@ -29,6 +39,8 @@ say_hello John
 ## 1 - stdout example
 
 add_numbers_v1() {
+	# using output redirection to stderr, we can avoid control the return value
+	echo "We will compute sum of $1 and $2" >&2
 	echo $(( $1 + $2 ))
 }
 echo "V1: The sum is $(add_numbers_v1 4 5)"
